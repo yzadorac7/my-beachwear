@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Beachwear Reserva - Moda praia">
+    <title>My Beachwear Reserva</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <div class="top-bar">
+        ENVIO PARA TODO O BRASIL
+    </div>
+
+    <header>
+        <button id="menuToggle" class="menu-toggle">☰</button>
+
+        <a href="#inicio" class="logo">
+            MY BEACHWEAR
+            <span>RESERVA</span>
+        </a>
+
+        <nav id="menu">
+            <a href="#inicio">Início</a>
+            <a href="#colecao">Coleção</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <button id="cartToggle" class="cart-button">
+            Sacola (<span id="cartCount">0</span>)
+        </button>
+    </header>
+
+    <main>
+
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <span>COLEÇÃO RESORT</span>
+                <h1>O verão é<br><em>o seu lugar.</em></h1>
+                <p>
+                    Peças que acompanham sua liberdade,
+                    do primeiro mergulho ao pôr do sol.
+                </p>
+                <a href="#colecao" class="btn">Conheça a coleção</a>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <p>✳ Moda praia exclusiva</p>
+            <p>↗ Envio para todo o Brasil</p>
+            <p>♡ Feito para você</p>
+        </section>
+
+        <section class="collection" id="colecao">
+
+            <div class="section-title">
+                <span>NOSSA CURADORIA</span>
+                <h2>Escolha seus <em>favoritos.</em></h2>
+                <p>Descubra peças para viver seus melhores momentos.</p>
+            </div>
+
+            <div class="filters">
+                <button data-filter="todos" class="active">Todos</button>
+                <button data-filter="biquinis">Biquínis</button>
+                <button data-filter="maios">Maiôs</button>
+                <button data-filter="saidas">Saídas</button>
+            </div>
+
+            <div class="products" id="products"></div>
+
+        </section>
+
+        <section class="about" id="sobre">
+            <div class="about-image"></div>
+
+            <div class="about-text">
+                <span>MY BEACHWEAR RESERVA</span>
+                <h2>Seu sol.<br><em>Seu ritmo.</em></h2>
+                <p>
+                    A moda praia é uma expressão de liberdade,
+                    personalidade e confiança.
+                    Descubra nossa seleção especial.
+                </p>
+                <a href="#colecao" class="btn">Ver coleção</a>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Receba nossas novidades</h2>
+            <form id="newsletterForm">
+                <input type="email" placeholder="Seu e-mail" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <p id="newsletterMessage"></p>
+        </section>
+
+    </main>
+
+    <footer id="contato">
+        <h2>MY BEACHWEAR RESERVA</h2>
+        <p>Vista seus melhores momentos.</p>
+        <a href="https://instagram.com/mybeachwear_reserva"
+           target="_blank">Instagram</a>
+        <p>© 2026 My Beachwear Reserva</p>
+    </footer>
+
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="cart" id="cart">
+        <div class="cart-header">
+            <h2>Sua sacola</h2>
+            <button id="closeCart">×</button>
+        </div>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-footer">
+            <p>Subtotal: <strong id="subtotal">R$ 0,00</strong></p>
+            <button id="checkout">Finalizar pedido</button>
+            <small>Frete e pagamento serão confirmados no atendimento.</small>
+        </div>
+    </aside>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
